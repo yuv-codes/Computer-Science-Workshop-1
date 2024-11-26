@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("img").before("<b>Added text before Image.</b>")
+            })
+            $("#b2").click(function(){
+                $("img").after("<b>Added text after Image.</b>")
+            })
+
+        });
+    </script>
+</head>
+<body>
+    <h1>Wxample of Addition of Elements.</h1>
+    <img src="best-coding-language-for-games.jpg" alt="images" height="300px" width="500px">
+    <br>
+    <button id="b1">Add before image</button>
+    <button id="b2">Add after image</button>
+</body>
+</html>

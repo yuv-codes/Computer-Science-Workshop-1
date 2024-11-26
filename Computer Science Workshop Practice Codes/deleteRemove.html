@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                // $("#divi").empty()
+                $("#divi").remove()
+            })
+
+        });
+    </script>
+</head>
+<body>
+    <div id="divi" style="height: 400px; width: 500px; margin-left: auto; margin-right: auto; border: solid 5px black; background-color: hotpink;">
+        <h2>Thisis heading</h2>
+        <p>This is paragraph</p>
+    </div>
+    <br>
+    <button id="b1">Remove</button>
+</body>
+</html>

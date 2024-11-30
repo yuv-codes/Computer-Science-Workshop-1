@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Vertical Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #333;
+            overflow-x: hidden;
+            padding-top: 20px;
+            color: white;
+        }
+
+        .menu-bar a {
+            display: block;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .menu-bar a:hover {
+            background-color: #575757;
+        }
+
+        .content {
+            margin-left: 220px; 
+            padding: 20px;
+            padding-bottom: 2000px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-bar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="content">
+        <h2>Page Content</h2>
+        <p>This is some content on the page. Scroll down to see the fixed menu in action.</p>
+    </div>
+
+</body>
+</html>

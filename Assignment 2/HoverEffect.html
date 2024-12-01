@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect with CSS Only</title>
+    <style>
+        /* Initial style for the div */
+        #specialDiv {
+            font-size: 20px;
+            color: black;
+            transition: color 0.3s ease;
+        }
+
+        /* Change text color when hovering over the image */
+        img:hover + #specialDiv {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Image element -->
+    <img src="download.webp" alt="Sample Image">
+
+    <!-- Div with inline text -->
+    <div id="specialDiv">My Special Div</div>
+
+</body>
+</html>

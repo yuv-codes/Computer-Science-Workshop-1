@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylized Page with Sticky Nav</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .background-image {
+            background-image: url('https://via.placeholder.com/50');
+            background-repeat: repeat-x;
+            height: 150px;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            overflow: hidden;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .content {
+            padding: 20px;
+            margin-top: 20px;
+            padding-bottom: 2000px;
+        }
+
+        .styled-text {
+            font-size: 24px;
+            color: #333;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .styled-image {
+            display: block;
+            margin: 20px auto;
+            border: 5px solid black; 
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-image"></div>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="content">
+        <h2 style="text-align: center;">Welcome to the Styled Page</h2>
+        
+        <img src="download.webp" alt="Circular Image" class="styled-image">
+
+        <p class="styled-text">
+            This is a sample paragraph with styled text to demonstrate typography effects.
+            Notice how the text is larger, has a specific line height, and is justified.
+            This kind of styling enhances readability and presentation.
+        </p>
+    </div>
+
+</body>
+</html>

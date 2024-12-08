@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        /* General styling for body */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Form container */
+        .form-container {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Centered logo */
+        .logo {
+            width: 80px;
+            margin-bottom: 15px;
+        }
+
+        /* Form input fields */
+        input[type="text"], input[type="password"], input[type="email"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Radio button container */
+        .radio-group {
+            text-align: left;
+            margin: 10px 0;
+        }
+
+        .radio-group label {
+            margin-right: 10px;
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Hover effect for submit button */
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <!-- SOA Logo centered -->
+        <img src="SOA-PNG.png" alt="SOA Logo" class="logo">
+
+        <!-- Registration Form -->
+        <h2>Register</h2>
+        <form action="#" method="post">
+            <!-- Text input field -->
+            <input type="text" name="username" placeholder="Username" required>
+
+            <!-- Password field -->
+            <input type="password" name="password" placeholder="Password" required>
+
+            <!-- Email field -->
+            <input type="email" name="email" placeholder="Email" required>
+
+            <!-- Radio buttons for gender -->
+            <div class="radio-group">
+                <label>Gender:</label><br>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+            </div>
+
+            <!-- Dropdown for country selection -->
+            <select name="country" required>
+                <option value="">Select Country</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ca">Canada</option>
+                <option value="in">India</option>
+            </select>
+
+            <!-- Submit button -->
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+</body>
+</html>

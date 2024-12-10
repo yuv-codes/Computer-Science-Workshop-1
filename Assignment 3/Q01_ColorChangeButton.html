@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorChangeButton</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $(".bo").css('background-color', 'red');
+            });
+            $("#b2").click(function(){
+                $(".bo").css('background-color', 'blue')
+            });
+            $("#b3").click(function(){
+                $(".bo").css('background-color', 'green')
+            });
+            $("#b4").click(function(){
+                $(".d1").toggle(2000);
+            });
+        })
+    </script>
+    <style>
+        .d1{
+            background-color: aqua;
+            height: 50px;
+        }
+    </style>
+</head>
+<body class="bo">
+    <button id="b1">Red</button>
+    <button id="b2">Blue</button>
+    <button id="b3">Green</button>
+    <button id="b4">Toggle</button>
+    <div class="d1">
+        <p>This is a Div element</p>
+    </div>
+</body>
+</html>

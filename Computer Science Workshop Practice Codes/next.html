@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        table {
+            display: table;
+            border: 0;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        .row {
+            display: table-row;
+        }
+
+        .cell {
+            display: table-cell;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .cell:nth-child(odd) {
+            border-right: 1px solid #ccc;;
+        }
+
+        #div4, #div5, #div6 {display: none;}
+
+        #div1, #div2, #div3, #div5, #div6, #div11, #div22, #div33, #div44, #div55, #div66 {width: 80px; height:80px;}
+
+        #div1, #div4, #div11, #div44 {
+            background-color: green;
+        }
+
+        #div2, #div5, #div22, #div55 {
+            background-color: red;
+        }
+
+        #div3, #div6, #div33, #div66{
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr class="row">
+            <td class="cell" id="div1">Div 1</td>
+            <td class="cell" id="div2">Div 2</td>
+            <td class="cell" id="div3">Div 3</td>
+        </tr>
+        <tr class="row">
+            <td class="cell" id="div4">Div 4</td>
+            <td class="cell" id="div5">Div 5</td>
+            <td class="cell" id="div6">Div 6</td>
+        </tr>
+    </table>
+</body>
+
+</html>

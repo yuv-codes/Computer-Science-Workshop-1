@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#click").click(function() {
+                $(this).hide();
+            });
+
+            $("#double").dblclick(function() {
+                $(this).hide();
+            });
+
+            $("h1").mouseenter(function() {
+                alert("Mouse Entered h1");
+            });
+
+            $("h3").mouseleave(function() {
+                alert("Mouse Left h3");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Example of mouse enter</h1>
+    <p id="click">Example of click Event</p>
+    <p id="double">Example of Double click</p>
+    <h3>Example of mouse leave</h3>
+</body>
+
+</html>

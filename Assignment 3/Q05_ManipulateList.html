@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulate Unordered List</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".app").click(function(){
+      $("ul").append('<li>CSS</li>');
+      });
+      $(".pre").click(function(){
+      $("ul").prepend("<li>Introduction to Full Stack Development</li>");
+      });
+      $(".aft").click(function(){
+      $("ul").after("<li>Topics updated</li>");
+      });
+      $(".bef").click(function(){
+      $("ul").before("<li>List of Topics Covered</li>");
+      });
+    });
+  </script>
+</head>
+<body>
+  <button class="app">Append</button>
+  <button class="pre">Prepend</button>
+  <button class="aft">After</button>
+  <button class="bef">Before</button>
+  <ul>
+    <li>Getting started with Ful Stack</li>
+    <li>HTML</li>
+    <li>CSS</li>
+  </ul>
+</body>
+</html>

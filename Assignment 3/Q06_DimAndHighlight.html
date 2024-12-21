@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dim and Highlight</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".highlight-btn").click(function(){
+        $(".div").removeClass('dim').addClass('highlight');
+      })
+      $(".dim-btn").click(function(){
+        $(".div").removeClass('highlight').addClass('dim');
+      })
+    })
+  </script>
+  <style>
+    .div{
+      height: 100px;
+      width: 200px;
+      background-color: black;
+    }
+    .highlight{
+      background-color: yellow;
+    }
+    .dim{
+      background-color: yellow;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="div"></div>
+  <button class="highlight-btn">Highlight</button>
+  <button class="dim-btn">Dim</button>
+</body>
+</html>

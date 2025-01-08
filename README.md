@@ -9,3 +9,5 @@ Assignment01 - [Solutions](https://github.com/yuv-codes/Computer-Science-Worksho
 Assignment02 - [Solutions](https://github.com/yuv-codes/Computer-Science-Workshop-1/tree/main/Assignment%202)
 
 Assignment03 - [Solutions](https://github.com/yuv-codes/Computer-Science-Workshop-1/tree/main/Assignment%203)
+
+Assignment04 - [Solutions](https://github.com/yuv-codes/Computer-Science-Workshop-1/tree/main/Assignment%204)

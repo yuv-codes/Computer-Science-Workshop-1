@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Progress Bars</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .progress-container {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container text-center mt-5">
+    <button id="uploadBtn" class="btn btn-primary">Upload File</button>
+
+    <div class="progress-container mt-4">
+        <div class="progress mb-3">
+            <div id="progressBar1" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 0%;"></div>
+        </div>
+        <div class="progress mb-3">
+            <div id="progressBar2" class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 0%;"></div>
+        </div>
+        <div class="progress mb-3">
+            <div id="progressBar3" class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 0%;"></div>
+        </div>
+        <div class="progress mb-3">
+            <div id="progressBar4" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 0%;"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#uploadBtn').click(function() {
+            $('.progress-container').show();
+
+            function animateProgressBar(id, callback) {
+                let width = 0;
+                const interval = setInterval(function() {
+                    if (width >= 100) {
+                        clearInterval(interval);
+                        if (callback) callback();
+                    } else {
+                        width++;
+                        $(id).css('width', width + '%');
+                    }
+                }, 100);
+            }
+
+            animateProgressBar('#progressBar1', function() {
+                animateProgressBar('#progressBar2', function() {
+                    animateProgressBar('#progressBar3', function() {
+                        animateProgressBar('#progressBar4');
+                    });
+                });
+            });
+        });
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

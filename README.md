@@ -11,3 +11,5 @@ Assignment02 - [Solutions](https://github.com/yuv-codes/Computer-Science-Worksho
 Assignment03 - [Solutions](https://github.com/yuv-codes/Computer-Science-Workshop-1/tree/main/Assignment%203)
 
 Assignment04 - [Solutions](https://github.com/yuv-codes/Computer-Science-Workshop-1/tree/main/Assignment%204)
+
+Assignment05 - [Solutions](https://github.com/yuv-codes/Computer-Science-Workshop-1/tree/main/Assignment%205)

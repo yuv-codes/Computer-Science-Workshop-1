@@ -13,3 +13,5 @@ Assignment03 - [Solutions](https://github.com/yuv-codes/Computer-Science-Worksho
 Assignment04 - [Solutions](https://github.com/yuv-codes/Computer-Science-Workshop-1/tree/main/Assignment%204)
 
 Assignment05 - [Solutions](https://github.com/yuv-codes/Computer-Science-Workshop-1/tree/main/Assignment%205)
+
+Practice_Codes - [Practice](https://github.com/yuv-codes/Computer-Science-Workshop-1/tree/main/Computer%20Science%20Workshop%20Practice%20Codes)
